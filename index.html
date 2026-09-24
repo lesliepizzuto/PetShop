@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>Pet Shop - Inicio</title>
+
+    <!--Tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <a href="./index.html">
+            <img src="./assets/logos/logo.png" alt="Logo Betchi" class="logo">
+        </a>
+
+        <nav>
+            <a href="./pages/productos.html">Productos</a>
+            <a href="./pages/galeria.html">Galería</a>
+            <a href="./pages/preguntasfrecuentes.html">Preguntas Frecuentes</a>
+            <a href="./pages/contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <div class="banner-home">
+            <h1>Todo para su bienestar</p>
+            <p>Productos de calidad para perros y gatos</p>
+            <p>Porque ellos también son familia</p>
+            <button>Ver productos</button>
+        </div>
+
+        <ul class="info">
+            <li>
+                <h2>Envíos a todo el país</h2>
+                <p>Rápidos y seguros</p>
+            </li>
+
+            <li>
+                <h2>Productos de calidad</h2>
+                <p>Las mejores marcas</p>
+            </li>
+
+            <li>
+                <h2>Atención personalizada</h2>
+                <p>Te respondemos al instante</p>
+            </li>
+        </ul>
+
+        <h3>Categorías destacadas</h3>
+        <h4>Alimentos</h4>
+        <h4>Accesorios</h4>
+        <h4>Higiene</h4>
+        <h4>Juguetes</h4>
+        
+        <h3>Ofertas especiales</h3>
+        <p>Descubrí nuestras promos</p>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
+        <h3>Redes sociales</h3>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./assets/logos/instagram.png" alt="Logo de Instagram">
+                    <title>Instagram</title>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./assets/logos/facebook.png" alt="Logo de Facebook">
+                    <title>Facebook</title>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://wa.me/" target="_blank">
+                    <img src="./assets/logos/whatsapp.png" alt="Logo de Whatsapp">
+                    <title>Whatsapp</title>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

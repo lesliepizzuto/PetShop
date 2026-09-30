@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Pet Shop - Preguntas Frecuentes</title>
 
     <!--Tipografia-->
@@ -39,30 +39,33 @@
         <li>Confirma tu pedido</li>
     </ol>
 
-    <h3>Redes sociales</h3>
-    <ul>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="../assets/logos/instagram.png" alt="Logo de Instagram">
-                <title>Instagram</title>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../assets/logos/facebook.png" alt="Logo de Facebook">
-                <title>Facebook</title>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://wa.me/" target="_blank">
-                <img src="../assets/logos/whatsapp.png" alt="Logo de Whatsapp">
-                <title>Whatsapp</title>
-            </a>
-        </li>
-    
-    </ul>
+    <footer>
+        <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
+        <h3>Redes sociales</h3>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../assets/logos/instagram.png" alt="Logo de Instagram" class="logos">
+                    <title>Instagram</title>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../assets/logos/facebook.png" alt="Logo de Facebook" class="logos">
+                    <title>Facebook</title>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/" target="_blank">
+                    <img src="../assets/logos/whatsapp.png" alt="Logo de Whatsapp" class="logos">
+                    <title>Whatsapp</title>
+                </a>
+            </li>
+        </ul>
+    </footer> 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     
 </body>
 </html>

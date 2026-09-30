@@ -84,6 +84,11 @@ a{
     text-decoration: none;
 }
 
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* CONTENIDO */
 
 .banner-home{

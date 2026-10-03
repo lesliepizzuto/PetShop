@@ -31,14 +31,118 @@
     </header>
 
     <main>
-        <h1>Productos</h1>
-        <p>Todo lo que necesitan, en un mismo lugar</p>
+        <section class="principal_prod">
+            <div class="titulo_prod">
+                <h1>Productos</h1>
+                <p>Todo lo que necesitan, en un mismo lugar</p>
+            </div>
+            <div class="busqueda">
+                <form action="" method="get">
+                    <input type="search" name="busqueda" id="busqueda" placeholder="Buscar productos..">
+                    <button type="submit" aria-label="Buscar">
+                        <img src="../assets/logos/lupa.png">
+                    </button>
+                </form>
 
-        <form action="" method="">
-            <label for="busqueda">Buscar productos..</label>
-            <input type="search" name="" id="busqueda">
-            <button type="submit">Buscar</button>
-        </form>
+                <div class="ordenar">
+                    <label for="ordenar">Ordenar por:</label>
+                    <select name="ordenar">
+                        <option value="mas_vendidos">Más vendidos</option>
+                        <option value="menor_precio">Menor precio</option>
+                        <option value="mayor_precio">Mayor precio</option>
+                        <option value="nombre_az">Nombre: A-Z</option>
+                        <option value="nombre_za">Nombre: Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="prod-filtros">
+            <div class="filtros">
+                <h2>Categorías</h2>
+                <ul>
+                    <li><input type="checkbox">Alimentos</li>
+                    <li><input type="checkbox">Accesorios</li>
+                    <li><input type="checkbox">Higiene</li>
+                    <li><input type="checkbox">Juguetes</li>
+                    <li><input type="checkbox">Camas</li>
+                    <li><input type="checkbox">Paseo</li>
+                    <li><input type="checkbox">Salud y cuidado</li>
+                </ul>
+
+                <h2>Mascota</h2>
+                <ul>
+                    <li><input type="checkbox">Perro</li>
+                    <li><input type="checkbox">Gato</li>
+                </ul>
+                <h2>Marca</h2>
+                <select name="marca">
+                    <option value="todas">Todas</option>
+                    <option value="royal">Royal Canin</option>
+                    <option value="proplan">Pro Plan</option>
+                    <option value="vitalcan">Vitalcan</option>
+                </select>
+                <h2>Rango de precio</h2>
+                <input type="range" class="rango_precio" min="2000" max="200000">
+                <div class="precios">
+                    <span>$2.000</span>
+                    <span>$200.000</span>
+                </div>
+            </div>
+
+            <div class="contenedor_prod">
+                <div class="producto">
+                    <img src="../assets/img/prod_comida.png">
+                    <h3>Royal Canin Alimento Premium 4kg</h3>
+                    <p>$12.500</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="../assets/img/prod_collar.png">
+                    <h3>Collar ajustable classic Talle S</h3>
+                    <p>$8.900</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="../assets/img/prod_shampoo.png">
+                    <h3>Shampoo neutro</h3>
+                    <p>$6.200</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="../assets/img/prod_cama.png">
+                    <h3>Cama soft Talle S</h3>
+                    <p>$18.000</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="../assets/img/prod_pelota.png">
+                    <h3>Juguete pelota</h3>
+                    <p>$4.500</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="../assets/img/prod_cuenco.png">
+                    <h3>Comedero antideslizante</h3>
+                    <p>$7.800</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="../assets/img/prod_soga.png">
+                    <h3>Juguete soga</h3>
+                    <p>$5.900</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="../assets/img/prod_transportadora.png">
+                    <h3>Transportadora</h3>
+                    <p>$24.500</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+        </section>
+        
 
         <table>
             <caption>Guía de talles</caption>
@@ -91,7 +195,7 @@
         </table>
 
         <div>
-            <h2>¿Cómo medir?</h2>
+            <h3>¿Cómo medir?</h3>
             <video loop controls>
                 <source src="../assets/videos/como_medir.mp4" type="video/mp4">
                 No se puede reproducir el video en este navegador

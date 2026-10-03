@@ -8,12 +8,12 @@
 /*ROOT*/
 :root{
     /*colores*/
-    --marron: #4A2C22;
-    --terracota: #C45F3D;
-    --marron-suave: #6B5145;
-    --verde: #66745C;
-    --beige: #E9D8C6;
-    --crema: #FFF9F1;
+    --color-titulos: #4A2C22;
+    --color-subtitulos: #C45F3D;
+    --color-texto: #6B5145;
+    --color-p: #66745C;
+    --color-card: #E9D8C6;
+    --color-fondo: #FFF9F1;
 
     /*tipografia*/
     --font-titulos: "Playfair Display", serif;
@@ -28,12 +28,14 @@ h1{
     font-weight: 600;
     font-size: 45px;
     color: var(--marron);
+    padding: 10px;
 }
 
 h2,h3,h4{
     font-family: var(--font-titulos);
-    color: var(--terracota);
+    color: var(--color-subtitulos);
     font-weight: 600;
+    padding: 10px;
 }
 
 h2{
@@ -52,19 +54,23 @@ p{
     font-family: var(--font-texto);
     font-size: 20px;
     font-weight: 400;
-    color: var(--verde);
+    color: var(--color-p);
+    padding: 10px;
 }
 
 body {
-    background-color: var(--beige);
+    background-color: var(--color-fondo);
 }
 
 button{
-    font-family: var(--font-titulos);
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--crema);
-    background-color: var(--terracota);
+    background-color: var(--color-subtitulos);
+    font-family: var(--font-texto);
+    color: var(--color-fondo);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 ul {
@@ -73,20 +79,26 @@ ul {
 
 /* HEADER Y NAVEGACIÓN */
 header{
-    background-color: var(--crema);
+    padding: 20px;
+    background-color: var(--color-card);
+    display: flex;
+    align-items: center;
 }
 
-a{
+nav ul li a{
     font-family: var(--font-titulos);
     font-size: 20px;
     font-weight: 500;
-    color: var(--marron);
+    color: var(--color-subtitulos);
     text-decoration: none;
+    border-radius: 5px;
+    background-color: var(--color-fondo);
+    padding: 10px;
 }
 
-nav{
+nav ul{
     display: flex;
-    justify-content: space-evenly;
+    gap: 30px;
 }
 
 /* CONTENIDO */
@@ -103,6 +115,8 @@ nav{
 .info{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .info h2, p{
@@ -110,8 +124,8 @@ nav{
 }
 
 .logo{
-    width: 90px;
-    height: auto;
+    width: 120px;
+    height: 100px;
 }
 
 .logos{
@@ -119,26 +133,75 @@ nav{
     height: auto;
 }
 
-.box{
+.cards{
     display: flex;
-    justify-content: space-evenly;
-    background-color: var(--crema);
-    font-family: var(--font-titulos);
-    color: var(--terracota);
+    gap: 25px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+.categorias {
+    display: flex;
+    gap: 12px;
+    width: 65%;
+}
+
+.box {
+    background-color: var(--color-card);
+    border-radius: 15px;
+    width: 25%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.box h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+.box img{
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.box_2 {
+    background-image: url(../assets/img/ofertas.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 35%;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+
+    background-color: var(--color-card);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+video{
+    width: 500px;
 }
 
 /* FOOTER */
 footer{
-    background-color: var(--verde)
+    background-color: var(--color-p);
 }
 
 footer p{
-    color: var(--crema);
+    color: var(--color-fondo);
     font-size: small;
 }
 
 footer h3{
-    color: var(--crema);
+    color: var(--color-fondo);
     font-size: medium;
 }
 

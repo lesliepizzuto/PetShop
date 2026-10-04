@@ -301,6 +301,9 @@ video{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2);
+    padding: 10px;
+    margin: 10px;
+    gap: 20px;
     
 }
 

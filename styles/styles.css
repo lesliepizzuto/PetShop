@@ -296,6 +296,20 @@ video{
     flex-direction: column;
 }
 
+/*-----------------------Galeria------------------------------*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2);
+    
+}
+
+.galeria img{
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+    bottom: 10px;
+}
 
 /*-----------------------Formularios------------------------------*/
 .form_contacto{

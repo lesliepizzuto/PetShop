@@ -32,36 +32,63 @@
     </header>
 
     <main>
-        <section class="form_contacto">
-            <h1>Contacto</h1>
-            <p>Estamos para ayudarte</p>
-            <form method="get">
-                <div class="resp_form">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" required>
-                </div>
-                <div class="resp_form">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="resp_form">
-                    <label for="telefono">Número de teléfono</label>
-                    <input type="tel" name="telefono" id="telefono">
-                </div>
-                <div class="resp_form">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+        <div class="contacto_contenedor">
+            <section class="form_contacto">
+                <h1>Contacto</h1>
+                <p>Estamos para ayudarte</p>
+                <form method="get">
+                    <div class="resp_form">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div class="resp_form">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="resp_form">
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="tel" name="telefono" id="telefono">
+                    </div>
+                    <div class="resp_form">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
 
-        <div>
-            <div>
-                <h2>Ubicación</h2>
-                <p>CABA</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.845283177675!2d-58.5222264!3d-34.63334989999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc839e5e2e8af%3A0x62093515f356beec!2sPet%20Shop%20-%20Natural%20Life%20-%20Liniers!5e0!3m2!1ses!2sar!4v1790985455114!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
+            <div class="info_contacto">
+                <div class="dato_contacto">
+                    <img src="../assets/logos/contacto_wpp.png" alt="WhatsApp" class="logos">
+                    <div>
+                        <h2>WhatsApp</h2>
+                        <p>+54 9 11 1234 5678</p>
+                    </div>
+                </div>
+                <div class="dato_contacto">
+                    <img src="../assets/logos/contacto_mail.png" alt="Email" class="logos">
+                    <div>
+                        <h2>Email</h2>
+                        <p>contacto@betchi.com</p>
+                    </div>
+                </div>
+                <div class="dato_contacto">
+                    <img src="../assets/logos/contacto_horario.png" alt="Horarios" class="logos">
+                    <div>
+                        <h2>Horarios</h2>
+                        <p>Lunes a Viernes de 9 a 18 hs</p>
+                        <p>Sábados de 9 a 13 hs</p>
+                    </div>
+                </div>
+                <div class="dato_contacto">
+                    <img src="../assets/logos/contacto_ubi.png" alt="Ubicación" class="logos">
+
+                    <div>
+                        <h2>Ubicación</h2>
+                        <p>Álvarez Jonte 6383</p>
+                    </div>
+                    <iframe class="mapa_contacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.845283177675!2d-58.5222264!3d-34.63334989999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc839e5e2e8af%3A0x62093515f356beec!2sPet%20Shop%20-%20Natural%20Life%20-%20Liniers!5e0!3m2!1ses!2sar!4v1790985455114!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
         </div>
 
     </main>

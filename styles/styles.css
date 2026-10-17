@@ -318,15 +318,30 @@ video{
     bottom: 10px;
 }
 
-/*-----------------------Formularios------------------------------*/
+/*-----------------------Contacto------------------------------*/
+
+.contacto_contenedor{
+    max-width: 1550px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 60px;
+    row-gap: 35px;
+}
+
 .form_contacto{
-    width: 800px;
-    margin: 12px;
+    width: 58%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .resp_form{
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -337,16 +352,66 @@ video{
 }
 
 .resp_form input{
-    width: 500px;
+    width: 85%;
     height: 30px;
-    justify-content: center;
+    box-sizing: border-box;
 }
 
 .resp_form textarea{
-    width: 500px;
-    height: 50px;
-    justify-content: center;
+    width: 85%;
+    height: 60px;
+    box-sizing: border-box;
 }
+
+.info_contacto{
+    width: 35%;
+    margin-top: 80px;
+    background-image: url(../assets/img/fondo_infocontacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+    border-radius: 20px;
+    margin-left: -50px;
+}
+
+.dato_contacto{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.dato_contacto .logos{
+    width: 40px;
+    height: auto;
+}
+
+.dato_contacto h2{
+    margin: 0 0 4px 0;
+    font-family: var(--font-texto);
+    font-size: 18px
+}
+
+.dato_contacto p{
+    margin: 0;
+    font-size: small;
+    line-height: 1.4;
+}
+
+.ubicacion{
+    width: 100%;
+}
+
+.mapa_contacto{
+    width: 100px;
+    height: 100px;
+    border: 0;
+    margin-top: 5px;
+    margin-left: 49px;
+}
+
+/*-----------------------Formularios------------------------------*/
 
 .busqueda{
     margin-left: auto;

@@ -639,7 +639,56 @@ video{
 }
 
 /*-----------------------Preguntas Frecuentes------------------------------*/
+.faq_contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 30px;
+}
 
+.faq_preguntas {
+    width: 53%;
+}
+
+.faq_imagen {
+    width: 47%;
+}
+
+.faq_imagen img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    cursor: pointer;
+}
+
+.accordion-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.accordion-body {
+    padding: 14px 18px;
+}
 
 
 
